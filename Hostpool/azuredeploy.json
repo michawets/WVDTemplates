@@ -16,13 +16,6 @@
                 "description": "The base URI where artifacts required by this template are located."
             }
         },
-        "subscription": {
-            "type": "String",
-            "defaultValue": "<<your-Subscription-ID>>",
-            "metadata": {
-                "description": "The subscription Id."
-            }
-        },
         "resourceGroup": {
             "type": "String",
             "defaultValue": "wvd-workshop-sessionhosts-rg",
