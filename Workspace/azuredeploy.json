@@ -3,18 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workspaceName": {
-            "type": "String"
+            "type": "String",
+            "defaultValue": "wvd-workshop-win10-2004-ws"
         },
         "workspaceDescription": {
-            "defaultValue": "",
+            "defaultValue": "My Windows 10 20h1 deployment in the WVD Spring Release",
             "type": "String"
         },
         "location": {
-            "defaultValue": "",
+            "defaultValue": "eastus",
             "type": "String"
         },
         "friendlyName": {
-            "defaultValue": "",
+            "defaultValue": "Windows 10 20H1 Workspace",
             "type": "String"
         },
         "appGroups": {
