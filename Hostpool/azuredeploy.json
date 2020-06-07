@@ -338,7 +338,7 @@
             }
         },
         "vmTemplate": {
-            "defaultValue": "{\"domain\":\"wvdworkshopt01.onmicrosoft.com\",\"galleryImageOffer\":null,\"galleryImagePublisher\":null,\"galleryImageSKU\":null,\"imageType\":\"CustomImage\",\"imageUri\":null,\"customImageId\":\"/subscriptions/1ab54fac-2bbe-4282-9c5b-561b8df622ab/resourceGroups/wvd-workshop-infra-rg/providers/Microsoft.Compute/images/MyCustomWVDManagedImage\",\"namePrefix\":\"wvd-p-pool\",\"osDiskType\":\"StandardSSD_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_D4s_v3\",\"cores\":4,\"ram\":16}}",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "The necessary information for adding more VMs to this Hostpool"
