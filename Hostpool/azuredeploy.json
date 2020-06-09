@@ -90,7 +90,7 @@
             "defaultValue": "MyAdminAccount@<<yourdomain>>.onmicrosoft.com",
             "type": "String",
             "metadata": {
-                "description": "A username in the domain that has privileges to join the session hosts to the domain. For example, 'user1@contoso.com'."
+                "description": "A username in the Windows AD domain that has privileges to join the session hosts to the Windows AD domain. For example, 'user1@contoso.com'."
             }
         },
         "administratorAccountPassword": {
@@ -143,7 +143,7 @@
             }
         },
         "vmImageType": {
-            "defaultValue": "CustomImage",
+            "defaultValue": "Gallery",
             "allowedValues": [
                 "CustomVHD",
                 "CustomImage",
@@ -155,21 +155,21 @@
             }
         },
         "vmGalleryImageOffer": {
-            "defaultValue": "",
+            "defaultValue": "office-365",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image Offer."
             }
         },
         "vmGalleryImagePublisher": {
-            "defaultValue": "",
+            "defaultValue": "microsoftwindowsdesktop",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image Publisher."
             }
         },
         "vmGalleryImageSKU": {
-            "defaultValue": "",
+            "defaultValue": "20h1-evd-o365pp",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image SKU."
@@ -183,7 +183,7 @@
             }
         },
         "vmCustomImageSourceId": {
-            "defaultValue": "/subscriptions/<<your-Subscription-ID>>/resourceGroups/wvd-workshop-infra-rg/providers/Microsoft.Compute/images/MyCustomWVDManagedImage",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = CustomImage) Resource ID of the image"
