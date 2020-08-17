@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "nestedTemplatesLocation": {
-            "defaultValue": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/wvd-templates/nestedtemplates/",
+            "defaultValue": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/nestedtemplates/",
             "type": "String",
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located."
