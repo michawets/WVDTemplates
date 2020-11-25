@@ -81,7 +81,8 @@
         },
         "addToWorkspace": {
             "type": "bool",
-            "defaultValue": "true",
+            "defaultValue": true,
+            "allowedValues": [ true, false ],
             "metadata": {
                 "description": "Whether to add applicationGroup to workspace."
             }
