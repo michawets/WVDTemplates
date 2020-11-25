@@ -3,14 +3,14 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "nestedTemplatesLocation": {
-            "defaultValue": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.12-preview/",
+            "defaultValue": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.15-preview/",
             "type": "String",
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located."
             }
         },
         "artifactsLocation": {
-            "defaultValue": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration.zip",
+            "defaultValue": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_10-26-2020.zip",
             "type": "String",
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located."
@@ -25,20 +25,20 @@
         },
         "hostpoolName": {
             "type": "String",
-            "defaultValue": "wvd-workshop-win10-2004-hp",
+            "defaultValue": "wvd-workshop-win10-arm-hp",
             "metadata": {
                 "description": "The name of the Hostpool to be created."
             }
         },
         "hostpoolFriendlyName": {
-            "defaultValue": "Windows 10 20H1 Hostpool",
+            "defaultValue": "Windows 10 20H2 Hostpool",
             "type": "String",
             "metadata": {
                 "description": "The friendly name of the Hostpool to be created."
             }
         },
         "hostpoolDescription": {
-            "defaultValue": "My Windows 10 20h1 Hostpool deployment in the WVD Spring Release",
+            "defaultValue": "Windows 10 20h2 deployment from the Microsoft & Cloud-Architect WVD Workshop",
             "type": "String",
             "metadata": {
                 "description": "The description of the Hostpool to be created."
@@ -52,7 +52,7 @@
             }
         },
         "workSpaceName": {
-            "defaultValue": "wvd-workshop-win10-2004-ws",
+            "defaultValue": "wvd-workshop-win10-arm-ws",
             "type": "String",
             "metadata": {
                 "description": "The name of the workspace to be attach to new Applicaiton Group."
@@ -143,7 +143,7 @@
             }
         },
         "vmImageType": {
-            "defaultValue": "Gallery",
+            "defaultValue": "CustomImage",
             "allowedValues": [
                 "CustomVHD",
                 "CustomImage",
@@ -155,21 +155,21 @@
             }
         },
         "vmGalleryImageOffer": {
-            "defaultValue": "office-365",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image Offer."
             }
         },
         "vmGalleryImagePublisher": {
-            "defaultValue": "microsoftwindowsdesktop",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image Publisher."
             }
         },
         "vmGalleryImageSKU": {
-            "defaultValue": "20h1-evd-o365pp",
+            "defaultValue": "",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image SKU."
@@ -183,14 +183,14 @@
             }
         },
         "vmCustomImageSourceId": {
-            "defaultValue": "",
+            "defaultValue": "/subscriptions/2ff014cf-0433-45c5-b967-b34e496c48fb/resourceGroups/myimagebuilder-rg/providers/Microsoft.Compute/images/Win1020h2",
             "type": "String",
             "metadata": {
                 "description": "(Required when vmImageType = CustomImage) Resource ID of the image"
             }
         },
         "vmDiskType": {
-            "defaultValue": "StandardSSD_LRS",
+            "defaultValue": "Premium_LRS",
             "allowedValues": [
                 "UltraSSD_LRS",
                 "Premium_LRS",
@@ -346,7 +346,7 @@
         },
         "tokenExpirationTime": {
             "type": "String",
-            "defaultValue": "2020-06-22T00:00:01.000Z",
+            "defaultValue": "2020-12-20T00:00:01.000Z",
             "metadata": {
                 "description": "Hostpool token expiration time"
             }

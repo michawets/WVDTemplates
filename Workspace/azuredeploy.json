@@ -4,10 +4,10 @@
     "parameters": {
         "workspaceName": {
             "type": "String",
-            "defaultValue": "wvd-workshop-win10-2004-ws"
+            "defaultValue": "wvd-workshop-win10-arm-ws"
         },
         "workspaceDescription": {
-            "defaultValue": "My Windows 10 20h1 deployment in the WVD Spring Release",
+            "defaultValue": "Windows 10 20h2 deployment from the Microsoft & Cloud-Architect WVD Workshop",
             "type": "String"
         },
         "location": {
@@ -15,7 +15,7 @@
             "type": "String"
         },
         "friendlyName": {
-            "defaultValue": "Windows 10 20H1 Workspace",
+            "defaultValue": "Windows 10 20H2 Workspace",
             "type": "String"
         },
         "appGroups": {
