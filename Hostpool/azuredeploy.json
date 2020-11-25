@@ -206,7 +206,8 @@
         },
         "vmUseManagedDisks": {
             "defaultValue": true,
-            "type": "Bool",
+            "allowedValues": [ true, false ],
+            "type": "bool",
             "metadata": {
                 "description": "True indicating you would like to use managed disks or false indicating you would like to use unmanaged disks."
             }
@@ -241,7 +242,8 @@
         },
         "usePublicIP": {
             "defaultValue": false,
-            "type": "Bool",
+            "allowedValues": [ true, false ],
+            "type": "bool",
             "metadata": {
                 "description": "Whether to use a Public IP"
             }
@@ -270,7 +272,8 @@
         },
         "createNetworkSecurityGroup": {
             "defaultValue": false,
-            "type": "Bool",
+            "type": "bool",
+            "allowedValues": [ true, false ],
             "metadata": {
                 "description": "Whether to create a new network security group or use an existing one"
             }
@@ -433,7 +436,8 @@
         },
         "validationEnviroment": {
             "defaultValue": false,
-            "type": "Bool",
+            "type": "bool",
+            "allowedValues": [ true, false ],
             "metadata": {
                 "description": "Whether to use validation enviroment."
             }
